@@ -23,8 +23,8 @@
             padding: 0;
         }
         .container {
-            width: 80%;
-            margin: auto;
+            width: 100%;
+            margin: 10px 10px 10px 10px;
         }              
         h1 {
             font-family: "Roboto Mono", monospace; /* Заголовок с засечками */
@@ -268,6 +268,13 @@
             margin-top: 20px;
             text-align: center;
         }
+        .full-width-line {
+            border: none; /* убираем стандартную рамку */
+            border-top: 1px solid rgb(141, 141, 141); /* рисуем свою линию */
+            margin: 10px 0 0 0;
+            width: 100%; /* растягиваем на всю ширину */
+            padding: 0; /* убираем внутренние отступы */
+        }
     </style>
 </head>
 <body>
@@ -278,7 +285,9 @@
             <p class="text_white_2">ИНЖИНИРИНГ</p>
         </div>            
         <p class="text_grey">Интерпретируем реальность объекта в информационную модель.</p>                          
-        <hr style="border: 1px solid rgb(141, 141, 141); margin: 30px 0 0 0;">
+        
+        <hr class="full-width-line">
+        
         <p class="text_white_1">Формализованная система данных, основанная на обследованиях, сканировании и инженерном анализе.</p>
         <table>
             <tr>
@@ -302,7 +311,7 @@
             <p class="text_orange_1">IM:&nbsp;[&nbsp;]</p>
         </div>  
         
-        <hr style="border: 1px solid rgb(141, 141, 141); margin: 10px 0 0 0;">
+        <hr class="full-width-line">
 
         <div class="button-container">
             <button class="button" id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
