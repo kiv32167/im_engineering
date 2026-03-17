@@ -113,7 +113,7 @@
             font-family: 'Andika', monospace;
             text-align: center;
             font-size: 1em;
-            margin: 20px 0 20px 0; /* верх, право, низ, лево */
+            margin: 20px 0 0 0; /* верх, право, низ, лево */
             color: rgb(141, 141, 141);
         }
         .text_white_1 {
@@ -127,22 +127,8 @@
             font-family: 'Andika', monospace;
             text-align: center;
             font-size: 2em;
-            margin: 20px 0 20px 0; /* верх, право, низ, лево */
+            margin: 20px 0 0 0; /* верх, право, низ, лево */
             color: rgb(230, 230, 230);
-        }
-        .text_white_without_margin {
-            font-family: 'Andika', monospace;
-            text-align: center;
-            font-size: 2em;
-            margin: 0 0 0 0; /* верх, право, низ, лево */
-            color: rgb(230, 230, 230);
-        }
-        .text_black_1 {
-            font-family: 'Andika', monospace;
-            text-align: center;
-            font-size: 2em;
-            margin: 0 0 0 0; /* верх, право, низ, лево */
-            color: rgb(39, 39, 39);
         }
         .text_orange_1 {
             font-family: 'Andika', monospace;
@@ -150,6 +136,13 @@
             font-size: 2em;
             margin: 20px 0 20px 0; /* верх, право, низ, лево */
             color: rgb(223, 108, 0);
+        }
+        .text_black_1 {
+            font-family: 'Andika', monospace;
+            text-align: center;
+            font-size: 1em;
+            margin: 20px 0 20px 0; /* верх, право, низ, лево */
+            color: rgb(0, 0, 0);
         }
         .phone_orange {
             font-family: 'Andika', monospace;
@@ -163,6 +156,13 @@
             align-items: center; /* выравнивание по вертикали */
             justify-content: center; /* выравнивание по горизонтали */
             gap: 10px; /* расстояние между элементами */
+        }
+        .real-data-container {
+            display: flex;
+            align-items: center; /* выравнивание по вертикали */
+            justify-content: center; /* выравнивание по горизонтали */
+            gap: 10px; /* расстояние между элементами */
+            margin: 10px 0 0 0;
         }
         .contact-container {
             display: flex;
@@ -191,10 +191,10 @@
             padding: 30px;
             border-radius: 10px;
             max-width: 500px;
-            width: 90%;
+            width: 50%;
             max-height: 80vh;
             overflow-y: auto;
-            box-shadow: 0 5px 30px rgba(0, 0, 0, 0.3);
+            box-shadow: 0 5px 30px #1d1c20;
             position: relative;
         }
 
@@ -204,26 +204,9 @@
             color: #333;
             font-size: 24px;
         }
-
-        /* Кнопка закрытия (крестик) */
-        .close-button {
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 28px;
-            font-weight: bold;
-            color: rgb(223, 108, 0);
-            cursor: pointer;
-            transition: color 0.2s;
-        }
-
-        .close-button:hover {
-            color: rgb(156, 76, 0);
-        }
-
         /* Стили для полей формы */
         .form-group {
-            margin-bottom: 20px;
+            margin-bottom: 10px;
         }
 
         label {
@@ -284,21 +267,14 @@
 </head>
 <body>
     <div class="container">
-        <p class="head_logo">IM:[ ]</p>
         <p class="text_grey">ИНЖИНИРИНГОВОЕ ОБЪЕДИНЕНИЕ «ИМИТАЦИЯ»</p>
-        <p class="text_white_2">Интерпретируем реальность объекта в информационную модель.</p>
-        <div class="button-container">
-            <button id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
-        </div>          
-
-        <hr style="border: 1px solid rgb(141, 141, 141); margin: 30px 0 0 0;">
         <div class="title-container">
             <p class="head_1_im">IM:[ ]</p>
-            <p class="head_1">ИНЖИНИРИНГ</p>
-        </div>    
-        <p class="text_grey">Формализованная система данных, основанная на обследованиях, сканировании и инженерном анализе.</p>
+            <p class="text_white_2">ИНЖИНИРИНГ</p>
+        </div>            
+        <p class="text_grey">Интерпретируем реальность объекта в информационную модель.</p>                          
         <hr style="border: 1px solid rgb(141, 141, 141); margin: 30px 0 0 0;">
-
+        <p class="text_white_1">Формализованная система данных, основанная на обследованиях, сканировании и инженерном анализе.</p>
         <table>
             <tr>
                 <th class="text_white_1">Обследование и фиксация</th>
@@ -311,17 +287,19 @@
                 <td class="text_grey">Экспертиза и сопровождение</td>
             </tr>
         </table>
-        <hr style="border: 1px solid rgb(141, 141, 141); margin: 30px 0 0 0;">
-
-        <div class="title-container">
+        <div class="real-data-container">
             <p class="text_white_1">РЕАЛЬНОСТЬ</p>
             <p class="text_orange_1">&#8594;</p>
             <p class="text_white_1">ДАННЫЕ</p>
             <p class="text_orange_1">&#8594;</p>
             <p class="text_white_1">ИНТЕРПРЕТАЦИЯ</p>
             <p class="text_orange_1">&#8594;</p>
-            <p class="text_orange_1">IM:[ ]</p>
+            <p class="text_orange_1">IM:&nbsp;[&nbsp;]</p>
+            <div class="button-container">
+                <button id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
+            </div>
         </div>  
+        
         <hr style="border: 1px solid rgb(141, 141, 141); margin: 10px 0 0 0;">
 
         <p class="text_grey">Свяжитесь с нами:</p>
@@ -350,29 +328,26 @@
 
         <!-- Затемненный фон и модальное окно -->
         <div class="modal-overlay" id="modalOverlay">
-            <div class="modal">
-                <span class="close-button" id="closeModalBtn">&times;</span>
-                <h2>Обсудить объект</h2>
-                
+            <div class="modal">                
                 <!-- Форма с полями -->
                 <form id="discussionForm">
                     <div class="form-group">
-                        <label class="text_white_without_margin" for="name">Ваше имя *</label>
+                        <label class="text_white_1" for="name">Ваше имя *</label>
                         <input type="text" id="name" name="name" required>
                     </div>
                     
                     <div class="form-group">
-                        <label class="text_white_without_margin" for="email">Email *</label>
+                        <label class="text_white_1" for="email">Email *</label>
                         <input type="email" id="email" name="email" required>
                     </div>
                     
                     <div class="form-group">
-                        <label class="text_white_without_margin" for="phone">Телефон</label>
+                        <label class="text_white_1" for="phone">Телефон</label>
                         <input type="tel" id="phone" name="phone" placeholder="+7 (999) 999-99-99">
                     </div>
                     
                     <div class="form-group">
-                        <label class="text_white_without_margin" for="object-type">Тип объекта *</label>
+                        <label class="text_white_1" for="object-type">Тип объекта *</label>
                         <select id="object-type" name="object-type" required>
                             <option class="text_black_1" value="">Выберите тип</option>
                             <option class="text_black_1" value="Квартира">Квартира</option>
@@ -384,7 +359,7 @@
                     </div>
                     
                     <div class="form-group">
-                        <label class="text_white_without_margin" for="message">Сообщение</label>
+                        <label class="text_white_1" for="message">Сообщение</label>
                         <textarea id="message" name="message" placeholder="Опишите ваш вопрос или пожелания..."></textarea>
                     </div>
                     
