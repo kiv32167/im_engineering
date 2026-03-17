@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Andika:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-       
+    <title>ИО "ИМИТАЦИЯ"</title>
     <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
         (function(){
@@ -174,6 +174,7 @@
             align-items: center; /* выравнивание по вертикали */
             justify-content: center; /* выравнивание по горизонтали */
             gap: 5px; /* расстояние между элементами */
+            margin: 0 10px 0 10px;
         }
               
         /* Затемненный фон позади модального окна */
@@ -316,28 +317,20 @@
         <div class="button-container">
             <button class="button" id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
         </div>
-        <table>               
-            <tr>
-                <td>
-                    <div class="contact-container">
-                        <p class="phone_orange">&#9742;</p>
-                        <p class="text_white_1">+7 (999) 123-45-67</p>
-                    </div>                    
-                </td>
-                <td>
-                    <div class="contact-container">
-                        <p class="phone_orange">&#9993;</p>
-                        <p class="text_white_1">info@im-example.ru</p>
-                    </div>                    
-                </td>
-                <td>
-                    <div class="contact-container">
-                        <svg fill="#df6c00" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>
-                        <p class="text_white_1">@im_example</p>
-                    </div>                    
-                </td>
-            </tr>
-        </table>
+        <div class="real-data-container">
+            <div class="contact-container">
+                <p class="phone_orange">&#9742;</p>
+                <p class="text_white_1">+7&nbsp;(999)&nbsp;123-45-67</p>
+            </div>
+            <div class="contact-container">
+                <p class="phone_orange">&#9993;</p>
+                <p class="text_white_1">info@im-example.ru</p>
+            </div>
+            <div class="contact-container">
+                <svg fill="#df6c00" width="20px" height="20px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m20.665 3.717-17.73 6.837c-1.21.486-1.203 1.161-.222 1.462l4.552 1.42 10.532-6.645c.498-.303.953-.14.579.192l-8.533 7.701h-.002l.002.001-.314 4.692c.46 0 .663-.211.921-.46l2.211-2.15 4.599 3.397c.848.467 1.457.227 1.668-.785l3.019-14.228c.309-1.239-.473-1.8-1.282-1.434z"/></svg>
+                <p class="text_white_1">@im_example</p>
+            </div>
+        </div>          
 
         <!-- Затемненный фон и модальное окно -->
         <div class="modal-overlay" id="modalOverlay">
