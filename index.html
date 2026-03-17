@@ -84,7 +84,12 @@
         .button-container {
             display: flex;
             justify-content: center; /* центрирование по горизонтали */
-            align-items: center;   /* центрирование по вертикали (если нужно) */            
+            align-items: center;   /* центрирование по вертикали (если нужно) */      
+            margin: 20px 0 0 0;      
+        }
+        .button {
+            width: 100%;
+            max-width: 400px; /* максимальная ширина */
         }
         .head_logo {
             font-family: "Andika", monospace;
@@ -269,7 +274,7 @@
     <div class="container">
         <p class="text_grey">ИНЖИНИРИНГОВОЕ ОБЪЕДИНЕНИЕ «ИМИТАЦИЯ»</p>
         <div class="title-container">
-            <p class="head_1_im">IM:[ ]</p>
+            <p class="head_1_im">IM:&nbsp;[&nbsp;]</p>
             <p class="text_white_2">ИНЖИНИРИНГ</p>
         </div>            
         <p class="text_grey">Интерпретируем реальность объекта в информационную модель.</p>                          
@@ -295,14 +300,13 @@
             <p class="text_white_1">ИНТЕРПРЕТАЦИЯ</p>
             <p class="text_orange_1">&#8594;</p>
             <p class="text_orange_1">IM:&nbsp;[&nbsp;]</p>
-            <div class="button-container">
-                <button id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
-            </div>
         </div>  
         
         <hr style="border: 1px solid rgb(141, 141, 141); margin: 10px 0 0 0;">
 
-        <p class="text_grey">Свяжитесь с нами:</p>
+        <div class="button-container">
+            <button class="button" id="openModalBtn">ОБСУДИТЬ ОБЪЕКТ</button>
+        </div>
         <table>               
             <tr>
                 <td>
